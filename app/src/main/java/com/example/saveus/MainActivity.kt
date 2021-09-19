@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(findViewById(R.id.my_toolbar))
         supportActionBar!!.setDisplayShowTitleEnabled(false)
         navBar.itemIconTintList=null
+        navBar.selectedItemId=R.id.main
         navBar.setOnItemSelectedListener{i->
          when(i.itemId){
           R.id.main -> transaction(MainFragment.newInstance())

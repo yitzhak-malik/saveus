@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -48,6 +49,10 @@ class MainFragment : Fragment(),
         val view= inflater.inflate(R.layout.fragment_main, container, false)
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment?
         mapFragment?.getMapAsync(this)
+
+        view.findViewById<LinearLayout>(R.id.target).setOnClickListener {
+            enableMyLocation()
+        }
         return view
 
     }
@@ -63,7 +68,7 @@ class MainFragment : Fragment(),
         if (!::map.isInitialized) return
         if (context?.let { ContextCompat.checkSelfPermission(it, Manifest.permission.ACCESS_FINE_LOCATION) }
             == PackageManager.PERMISSION_GRANTED) {
-            map.isMyLocationEnabled = true
+
         fusedLocationClient.lastLocation.addOnSuccessListener {
 
             var  newpp =  CameraPosition( LatLng(it.latitude,it.longitude),15F,map.cameraPosition.tilt,map.cameraPosition.bearing)

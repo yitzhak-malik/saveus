@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    tools:context=".loginActivity"
+    android:background="#fafbfc">
+
+  <include
+      layout="@layout/toolbar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/main"
+        android:gravity="center"
+        android:text="ברוכים הבאים"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="5sp"
+        android:text="@string/login_2"
+        android:textColor="#051549"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:weightSum="9">
+        <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/inpotName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/login_edittext_name"
+            android:outlineSpotShadowColor="@color/main"
+            android:textColorHint="#b0b0b0" />
+
+        <EditText
+            android:id="@+id/inpotEmail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/login_edittext_email"
+            android:outlineSpotShadowColor="@color/main"
+            android:textColorHint="#b0b0b0" />
+
+        <EditText
+            android:id="@+id/inpotPhone"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/login_edittext_phone"
+            android:outlineSpotShadowColor="@color/main"
+            android:textColorHint="#b0b0b0" />
+    </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:layoutDirection="rtl"
+        android:gravity="bottom"
+       android:weightSum="6">
+<View
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_weight="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_note_1"
+            android:textColor="#b0b0b0"
+            android:textSize="13sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_note_2"
+            android:textColor="@color/main"
+            android:textSize="13sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_note_3"
+            android:textColor="#b0b0b0"
+            android:textSize="13sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_note_4"
+            android:textColor="@color/main"
+            android:textSize="13sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layoutDirection="ltr">
+
+
+        <TextView
+            android:layout_width="133.2dp"
+            android:layout_height="40.8dp"
+            android:background="@drawable/arond"
+            android:text="הרשמה"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginRight="13dp"/>
+        <TextView
+            android:id="@+id/skipButton"
+            android:layout_width="133.2dp"
+            android:layout_height="40.8dp"
+            android:background="@drawable/arond_empti"
+            android:text="דלג"
+            android:textColor="#b0b0b0"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

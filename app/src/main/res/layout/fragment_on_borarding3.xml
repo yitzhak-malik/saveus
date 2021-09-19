@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onBorardingFragment3"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:weightSum="2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding_3"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="0.14"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="0.86"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="התראות ועדכונים"
+            android:textColor="@color/main"
+            android:textSize="40dp"
+            android:paddingHorizontal="19dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/on_boarding_3"
+            android:textSize="16dp"
+            android:textColor="@color/text"
+            android:layout_weight="9"
+            android:textAlignment="center"
+            android:padding="0dp"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

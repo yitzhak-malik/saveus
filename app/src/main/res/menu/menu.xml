@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/alerts"
+        android:title="התראות"
+        android:icon="@drawable/ic_navbar1"
+         android:enabled="true"
+        app:showAsAction="ifRoom"
+
+        />
+    <item android:id="@+id/my_place"
+        android:title="המקומות שלי"
+        android:icon="@drawable/ic_navbar2"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/main"
+        android:title="ראשי"
+        android:icon="@drawable/ic_navbar3"
+        android:enabled="true"
+        app:showAsAction="ifRoom"/>
+</menu>
+ 

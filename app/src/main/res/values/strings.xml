@@ -12,4 +12,6 @@
     <string name="login_note_2"><u>התקנון</u></string>
     <string name="login_note_3">ואת</string>
     <string name="login_note_4"><u>תנאי השימוש</u></string>
+    <string name="the_my_place">המקומות שלי</string>
+    <string name="on_the_map">על המפה</string>
 </resources>

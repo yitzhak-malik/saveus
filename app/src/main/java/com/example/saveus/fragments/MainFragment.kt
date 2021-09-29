@@ -3,13 +3,15 @@ package com.example.saveus.fragments
 import android.Manifest
 import android.annotation.SuppressLint
 import android.content.pm.PackageManager
-import android.location.Location
 import android.os.Bundle
+import android.os.SystemClock
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Chronometer
+import android.widget.Chronometer.OnChronometerTickListener
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
@@ -22,6 +24,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.CameraPosition
 import com.google.android.gms.maps.model.LatLng
+import kotlin.math.log
 
 
 class MainFragment : Fragment(),
@@ -38,6 +41,7 @@ class MainFragment : Fragment(),
         arguments?.let {
 
         }
+
         fusedLocationClient = LocationServices.getFusedLocationProviderClient(context)
     }
 
@@ -52,7 +56,43 @@ class MainFragment : Fragment(),
 
         view.findViewById<LinearLayout>(R.id.target).setOnClickListener {
             enableMyLocation()
+
         }
+        // timer
+        val chrono = view.findViewById(R.id.chronometer) as Chronometer
+        chrono.onChronometerTickListener =
+            OnChronometerTickListener { chronometer ->
+                val time = SystemClock.elapsedRealtime() - chronometer.base
+                when(time){
+
+                }
+                if (time > 36000000) {
+                    chrono.format = "%s"
+                }
+                else if (time > 3600000) {
+                    chrono.format = "0%s"
+                }
+                else {
+                    chrono.format = "00:%s"
+                }
+            }
+        chrono.format="00:%s"
+
+        //button
+        val startButton =view.findViewById<LinearLayout>(R.id.startButton)
+        val stopButton =view.findViewById<LinearLayout>(R.id.stopButton)
+        startButton.setOnClickListener {
+            startButton.visibility=View.GONE
+            stopButton.visibility=View.VISIBLE
+            chrono.start()
+        }
+        stopButton.setOnClickListener {
+            stopButton.visibility=View.GONE
+            startButton.visibility=View.VISIBLE
+            chrono.stop()
+            chrono.base = SystemClock.elapsedRealtime()-35999999
+        }
+
         return view
 
     }

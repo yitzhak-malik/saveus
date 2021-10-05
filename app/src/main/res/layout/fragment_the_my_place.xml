@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TheMyPlaceFragment"
+    android:orientation="vertical"
+    android:layoutDirection="ltr">
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="18dp"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="35dp"
+       android:weightSum="5.5"
+       >
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="0.25"/>
+       <TextView
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:layout_marginRight="4.9dp"
+           android:background="@drawable/rectangle"
+          android:text="הצג"
+           android:textColor="#ffaa00"
+           android:textSize="16sp"/>
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:layout_marginRight="4.9dp"
+           android:background="@drawable/date"
+           android:gravity="center"
+           >
+
+       <TextView
+           android:id="@+id/toDate"
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:textColor="#737684"
+           android:gravity="center"
+           android:layout_marginRight="20dp"
+           android:textSize="16sp"
+           android:text="12.12.1212" />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               app:srcCompat="@drawable/icon_calendar"/>
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="2"
+           android:layout_marginRight="4.9dp"
+           android:background="@drawable/date"
+           android:gravity="center">
+
+           <TextView
+               android:id="@+id/fromDate"
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:textColor="#737684"
+               android:gravity="center"
+               android:layout_marginRight="20dp"
+               android:textSize="16sp"
+               android:text="12.12.1212" />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               app:srcCompat="@drawable/icon_calendar"/>
+       </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

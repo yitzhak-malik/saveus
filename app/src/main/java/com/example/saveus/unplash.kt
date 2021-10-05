@@ -19,8 +19,9 @@ class unplash : AppCompatActivity() {
         Handler(Looper.getMainLooper()).postDelayed({
             if (!sherd.getBoolean(visit,false)) {
                 startActivity(intentToBoarding)
-            }
+            }else{
                 startActivity(intentLoginActivity)
+            }
 
         },1000)
     }

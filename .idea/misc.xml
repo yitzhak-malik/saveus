@@ -7,11 +7,15 @@
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/arond.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/arond_empti.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/circle.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/date.xml" value="0.22" />
+        <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/ic_baseline_date_range_24.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/ic_dot_default_12.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/ic_dot_selcted_12.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/ic_launcher_background.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/ic_user_40.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/icon.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/icon_calendar.xml" value="0.32916666666666666" />
+        <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/rectangle.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/redCircle.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/red_circle.xml" value="0.32916666666666666" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/drawable/tab_selector.xml" value="0.32916666666666666" />
@@ -25,6 +29,7 @@
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/fragment_on_borarding.xml" value="0.25" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/fragment_on_borarding2.xml" value="0.2826086956521739" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/fragment_on_borarding3.xml" value="0.33" />
+        <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/fragment_the_my_place.xml" value="0.33" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/navbar.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/layout/toolbar.xml" value="0.20153985507246377" />
         <entry key="..\:/Users/stu/AndroidStudioProjects/SAVEUS/app/src/main/res/menu/menu.xml" value="0.30416666666666664" />

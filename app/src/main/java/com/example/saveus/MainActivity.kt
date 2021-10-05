@@ -31,7 +31,9 @@ class MainActivity : AppCompatActivity() {
          }
          true
         }
+        if(savedInstanceState==null){
         transaction(MainFragment.newInstance())
+        }
 
 
     }

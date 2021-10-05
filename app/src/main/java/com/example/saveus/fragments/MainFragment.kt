@@ -90,7 +90,7 @@ class MainFragment : Fragment(),
             stopButton.visibility=View.GONE
             startButton.visibility=View.VISIBLE
             chrono.stop()
-            chrono.base = SystemClock.elapsedRealtime()-35999999
+            chrono.base = SystemClock.elapsedRealtime()
         }
 
         return view
@@ -110,9 +110,11 @@ class MainFragment : Fragment(),
             == PackageManager.PERMISSION_GRANTED) {
 
         fusedLocationClient.lastLocation.addOnSuccessListener {
+          if(it!=null){
 
             var  newpp =  CameraPosition( LatLng(it.latitude,it.longitude),15F,map.cameraPosition.tilt,map.cameraPosition.bearing)
          map.animateCamera(CameraUpdateFactory.newCameraPosition(newpp))
+          }
         }
         } else {
             // Permission to access the location is missing. Show rationale and request permission

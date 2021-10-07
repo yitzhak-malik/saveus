@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--CardView that holds the elements
+        of the child RecyclerView -->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            >
+
+            <!--Image in the CardView-->
+            <!--Here we have already given
+                the source for the ImageView
+                and we will not assign it
+                in the Java code-->
+            <!--So all the ImageViews will
+                hold the same image-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_child_item"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/ic_dot_selcted_12" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="בלוך 52 קריית יערים"
+                    android:textColor="#051549"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical"
+                >
+
+                <!--Text in the CardView-->
+                <TextView
+                    android:id="@+id/child_item_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:text="10:5 - 12:9"
+                    android:textColor="#737684"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/child_item_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:50:66"
+                    android:textStyle="bold"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</FrameLayout>

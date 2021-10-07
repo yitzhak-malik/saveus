@@ -32,6 +32,7 @@
            android:textSize="16sp"/>
 
        <LinearLayout
+           android:id="@+id/toDate"
            android:layout_width="0dp"
            android:layout_height="match_parent"
            android:layout_weight="2"
@@ -41,7 +42,7 @@
            >
 
        <TextView
-           android:id="@+id/toDate"
+           android:id="@+id/textToDate"
            android:layout_width="wrap_content"
            android:layout_height="match_parent"
            android:textColor="#737684"
@@ -55,6 +56,7 @@
                app:srcCompat="@drawable/icon_calendar"/>
        </LinearLayout>
        <LinearLayout
+           android:id="@+id/fromDate"
            android:layout_width="0dp"
            android:layout_height="match_parent"
            android:layout_weight="2"
@@ -63,7 +65,7 @@
            android:gravity="center">
 
            <TextView
-               android:id="@+id/fromDate"
+               android:id="@+id/textFromDate"
                android:layout_width="wrap_content"
                android:layout_height="match_parent"
                android:textColor="#737684"
@@ -78,5 +80,10 @@
        </LinearLayout>
 
    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/parent_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/recyclerview_parent_item"/>
 
 </LinearLayout>

@@ -69,7 +69,7 @@ class RecyclerviewChildAdapter (private val childItemList: List<RecyclerviewChil
            val location = itemView.findViewById<TextView>(R.id.location)
 
            childItemTitle.text = item.childItemTitleTimeFromTo
-           location.text = item.location
+           location.text = item.textLocation
            childItemTime.text = item.childItemTime
 
         }
